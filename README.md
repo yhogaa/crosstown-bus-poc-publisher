@@ -14,3 +14,7 @@ Url nya sama artinya AMQP broker dari publisher dan subscriber menggunakan konek
 4. **Sending and processing event**
 ![commit 4](<assets/img/Sending and processing event.jpg>)
 >  Dari gambar diatas, ketika kita menjalankan program subscriber dan publisher menggunakan `cargo run`, maka publisher akan mengirim 5 event kepada message broker yang nantinya akan diterima oleh subscriber.
+
+5. **Monitoring chart based on publisher**
+![commit 5](<assets/img/Monitoring chart based on publisher.jpg>)
+> Terdapat spikes pada grafik Message Rates. Grafik ini menggambarkan berapa banyak/cepat message yang dikirim publisher dalam 1 menit terakhir. Disini saya mencoba untuk run publisher sekali kemudian memberi jeda dan run lagi. Dapat disimpulkan, message rates ini akan meningkat ketika publisher mengirimkan data ke message broker. Semakin banyuak data yang dikirim oleh publisher, maka semakin tinggi message rates nya.
