@@ -10,3 +10,7 @@ Url nya sama artinya AMQP broker dari publisher dan subscriber menggunakan konek
 
 3. **Running RabbitMQ as message broker**</br>
 ![commit 3](<assets/img/Running RabbitMQ as message broker.jpg>)
+
+4. **Sending and processing event**
+![commit 4](<assets/img/Sending and processing event.jpg>)
+>  Dari gambar diatas, ketika kita menjalankan program subscriber dan publisher menggunakan `cargo run`, maka publisher akan mengirim 5 event kepada message broker yang nantinya akan diterima oleh subscriber.
